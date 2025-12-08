@@ -1,12 +1,14 @@
 'use client';
 
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import { FaInstagram } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -16,6 +18,13 @@ export default function Navbar() {
     { name: 'Journal', href: '/journal' },
     { name: 'Contact', href: '/contact' },
   ];
+
+  const isActive = (href: string) => {
+    if (href === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(href);
+  };
 
   return (
     <nav className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
@@ -32,9 +41,16 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-sm uppercase tracking-wider text-gray-700 hover:text-[#556B2F] transition-colors duration-300"
+                className={`text-sm uppercase tracking-wider transition-all duration-300 relative group ${
+                  isActive(link.href)
+                    ? 'text-[#556B2F] font-semibold'
+                    : 'text-gray-700 hover:text-[#556B2F]'
+                }`}
               >
                 {link.name}
+                {isActive(link.href) && (
+                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-[#556B2F]"></span>
+                )}
               </Link>
             ))}
             <a
@@ -66,7 +82,11 @@ export default function Navbar() {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 text-base text-gray-700 hover:text-[#556B2F] hover:bg-gray-50 rounded-md transition-colors"
+                className={`block px-3 py-2 text-base rounded-md transition-colors ${
+                  isActive(link.href)
+                    ? 'text-[#556B2F] bg-[#F5F5DC] font-semibold'
+                    : 'text-gray-700 hover:text-[#556B2F] hover:bg-gray-50'
+                }`}
               >
                 {link.name}
               </Link>

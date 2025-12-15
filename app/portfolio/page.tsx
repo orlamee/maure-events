@@ -13,63 +13,63 @@ export default function Portfolio() {
       id: 1,
       title: 'Elegant Garden Wedding',
       category: 'weddings',
-      image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80',
+      image: '/images/Portfolio/Elegant Garden Wedding/IMG_0874.JPG',
       description: 'A romantic outdoor celebration with lush florals and natural elegance'
     },
     {
       id: 2,
       title: 'Corporate Gala',
       category: 'corporate',
-      image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9556.JPG',
       description: 'Sophisticated brand launch event with modern design elements'
     },
     {
       id: 3,
       title: 'Milestone Birthday',
       category: 'social',
-      image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80',
+      image: '/images/Portfolio/Milestone Birthday/IMG_1321.JPG',
       description: 'Vibrant celebration honoring a special milestone'
     },
     {
       id: 4,
       title: 'Intimate Dinner Party',
       category: 'intimate',
-      image: 'https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=800&q=80',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9562.JPG',
       description: 'Refined table setting for an exclusive private gathering'
     },
     {
       id: 5,
       title: 'Modern Ballroom Wedding',
       category: 'weddings',
-      image: 'https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=800&q=80',
+      image: '/images/Portfolio/Elegant Garden Wedding/IMG_1357.JPG',
       description: 'Contemporary elegance meets timeless romance'
     },
     {
       id: 6,
       title: 'Baby Shower Celebration',
       category: 'intimate',
-      image: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&q=80',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9574.JPG',
       description: 'Soft, elegant celebration welcoming new life'
     },
     {
       id: 7,
       title: 'Corporate Networking Event',
       category: 'corporate',
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9577.JPG',
       description: 'Professional atmosphere with sophisticated design'
     },
     {
       id: 8,
       title: 'Anniversary Celebration',
       category: 'social',
-      image: 'https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&q=80',
+      image: '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
       description: 'Romantic celebration of enduring love'
     },
     {
       id: 9,
       title: 'Rustic Vineyard Wedding',
       category: 'weddings',
-      image: 'https://images.unsplash.com/photo-1469371670807-013ccf25f16a?w=800&q=80',
+      image: '/images/Portfolio/Elegant Garden Wedding/IMG_0883.JPG',
       description: 'Natural beauty in a stunning outdoor setting'
     }
   ];
@@ -84,7 +84,7 @@ export default function Portfolio() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
          <img
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80"
+            src="/images/Portfolio/Milestone Birthday/IMG_1321.JPG"
             alt="Our Services"
             className="w-full h-full object-cover"
           />

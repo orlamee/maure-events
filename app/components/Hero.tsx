@@ -1,18 +1,44 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+  const heroImages = [
+    '/images/hero/IMG_3024.JPG',
+    '/images/hero/IMG_3027.JPG',
+    '/images/hero/IMG_4902.JPG'
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => 
+        prevIndex === heroImages.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000); // Change image every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [heroImages.length]);
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image Slider */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=80"
-          alt="Elegant event setup"
-          className="w-full h-full object-cover"
-        />
+        <AnimatePresence mode="wait">
+          <motion.img
+            key={currentImageIndex}
+            src={heroImages[currentImageIndex]}
+            alt="Elegant event setup"
+            className="w-full h-full object-cover"
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          />
+        </AnimatePresence>
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 

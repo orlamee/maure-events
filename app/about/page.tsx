@@ -10,7 +10,7 @@ export default function About() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=1920&q=80"
+            src="/images/our-story/IMG_3014.JPG"
             alt="About Maure Events"
             className="w-full h-full object-cover"
           />
@@ -47,7 +47,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&q=80"
+                src="/images/our-story/IMG_3016.JPG"
                 alt="Our Story"
                 className="w-full h-[500px] object-cover shadow-lg"
               />

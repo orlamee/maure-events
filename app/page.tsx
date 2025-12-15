@@ -113,17 +113,17 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[
               {
-                image: 'https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&q=80',
+                image: '/images/Homepage/SERVICES SECTION/Full Event Planning/IMG_1370.JPG',
                 title: 'Full Event Planning',
                 description: 'Complete support from vision to execution'
               },
               {
-                image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&q=80',
+                image: '/images/Homepage/SERVICES SECTION/Event Design/IMG_4925.JPG',
                 title: 'Event Design',
                 description: 'Stunning visual concepts brought to life'
               },
               {
-                image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800&q=80',
+                image: '/images/Homepage/SERVICES SECTION/Day-Of Coordination/IMG_3500.JPG',
                 title: 'Day-Of Coordination',
                 description: 'Seamless execution on your special day'
               }
@@ -167,7 +167,7 @@ export default function Home() {
       <section className="relative py-32 px-4">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=1920&q=80"
+            src="/images/Homepage/Footer - CTA banner/IMG_1379.JPG"
             alt="Elegant table setting"
             className="w-full h-full object-cover"
           />

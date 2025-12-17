@@ -13,6 +13,7 @@ export default function About() {
             src="/images/our-story/IMG_3014.JPG"
             alt="About Maure Events"
             className="w-full h-full object-cover"
+            style={{ objectPosition: '50% 22%' }}
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>

@@ -6,7 +6,7 @@ import { useState } from 'react';
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const categories = ['all', 'weddings', 'corporate', 'social', 'intimate'];
+  const categories = ['all', 'weddings', 'social', 'intimate'];
 
   const portfolioItems = [
     {
@@ -17,17 +17,10 @@ export default function Portfolio() {
       description: 'A romantic outdoor celebration with lush florals and natural elegance'
     },
     {
-      id: 2,
-      title: 'Corporate Gala',
-      category: 'corporate',
-      image: '/images/Portfolio/Intimate Dinner Party/IMG_9556.JPG',
-      description: 'Sophisticated brand launch event with modern design elements'
-    },
-    {
       id: 3,
       title: 'Milestone Birthday',
       category: 'social',
-      image: '/images/Portfolio/Milestone Birthday/IMG_1321.JPG',
+      image: '/images/milestone.JPG',
       description: 'Vibrant celebration honoring a special milestone'
     },
     {
@@ -38,26 +31,13 @@ export default function Portfolio() {
       description: 'Refined table setting for an exclusive private gathering'
     },
     {
-      id: 5,
-      title: 'Modern Ballroom Wedding',
-      category: 'weddings',
-      image: '/images/Portfolio/Elegant Garden Wedding/IMG_1357.JPG',
-      description: 'Contemporary elegance meets timeless romance'
-    },
-    {
       id: 6,
       title: 'Baby Shower Celebration',
       category: 'intimate',
       image: '/images/Portfolio/Intimate Dinner Party/IMG_9574.JPG',
       description: 'Soft, elegant celebration welcoming new life'
     },
-    {
-      id: 7,
-      title: 'Corporate Networking Event',
-      category: 'corporate',
-      image: '/images/Portfolio/Intimate Dinner Party/IMG_9577.JPG',
-      description: 'Professional atmosphere with sophisticated design'
-    },
+    
     {
       id: 8,
       title: 'Anniversary Celebration',
@@ -65,13 +45,6 @@ export default function Portfolio() {
       image: '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
       description: 'Romantic celebration of enduring love'
     },
-    {
-      id: 9,
-      title: 'Rustic Vineyard Wedding',
-      category: 'weddings',
-      image: '/images/Portfolio/Elegant Garden Wedding/IMG_0883.JPG',
-      description: 'Natural beauty in a stunning outdoor setting'
-    }
   ];
 
   const filteredItems = selectedCategory === 'all' 
@@ -87,6 +60,7 @@ export default function Portfolio() {
             src="/images/Portfolio/Milestone Birthday/IMG_1321.JPG"
             alt="Our Services"
             className="w-full h-full object-cover"
+            style={{ objectPosition: '50% 20%' }}
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>

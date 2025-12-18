@@ -2,9 +2,15 @@
 
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import Lightbox from '../components/Lightbox';
 
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [selectedPortfolio, setSelectedPortfolio] = useState<{
+    title: string;
+    images: string[];
+  } | null>(null);
 
   const categories = ['all', 'weddings', 'social', 'intimate'];
 
@@ -14,36 +20,87 @@ export default function Portfolio() {
       title: 'Elegant Garden Wedding',
       category: 'weddings',
       image: '/images/Portfolio/Elegant Garden Wedding/IMG_0874.JPG',
-      description: 'A romantic outdoor celebration with lush florals and natural elegance'
+      description: 'A romantic outdoor celebration with lush florals and natural elegance',
+      gallery: [
+        '/images/Portfolio/Elegant Garden Wedding/IMG_0874.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_0883.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_0884.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_0888.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1357.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1359.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1360.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1361.JPG',
+      ]
+    },
+    {
+      id: 2,
+      title: 'Milestone Birthday',
+      category: 'social',
+      image: '/images/Milestone.JPG',
+      description: 'Vibrant celebration honoring a special milestone',
+      gallery: [
+        '/images/Portfolio/Milestone Birthday/IMG_1321.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1323.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1325.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1363.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1365.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1367.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1368(1).JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1368.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1371.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1373.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1374.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1379.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1380.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1382.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1392.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1433.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_1436.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_3575.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_3592.JPG',
+        '/images/Portfolio/Milestone Birthday/IMG_3598.JPG',
+      ]
     },
     {
       id: 3,
-      title: 'Milestone Birthday',
-      category: 'social',
-      image: '/images/milestone.JPG',
-      description: 'Vibrant celebration honoring a special milestone'
-    },
-    {
-      id: 4,
       title: 'Intimate Dinner Party',
       category: 'intimate',
       image: '/images/Portfolio/Intimate Dinner Party/IMG_9562.JPG',
-      description: 'Refined table setting for an exclusive private gathering'
+      description: 'Refined table setting for an exclusive private gathering',
+      gallery: [
+        '/images/Portfolio/Intimate Dinner Party/IMG_9562.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9556.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9574.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9577.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9584.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9590.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9612.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9613.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9615.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9626.JPG',
+      ]
     },
     {
-      id: 6,
-      title: 'Baby Shower Celebration',
-      category: 'intimate',
-      image: '/images/Portfolio/Intimate Dinner Party/IMG_9574.JPG',
-      description: 'Soft, elegant celebration welcoming new life'
-    },
-    
-    {
-      id: 8,
+      id: 4,
       title: 'Anniversary Celebration',
       category: 'social',
       image: '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
-      description: 'Romantic celebration of enduring love'
+      description: 'Romantic celebration of enduring love',
+      gallery: [
+        '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4880.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4881.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4894.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4898.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4900.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4902.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4925.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4927.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4930.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4931.JPG',
+        '/images/Portfolio/Anniversary Celebration/IMG_4935.JPG',
+      ]
     },
   ];
 
@@ -115,7 +172,14 @@ export default function Portfolio() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-300"
+                className="group relative overflow-hidden bg-white shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer"
+                onClick={() => {
+                  setSelectedPortfolio({
+                    title: item.title,
+                    images: item.gallery,
+                  });
+                  setLightboxOpen(true);
+                }}
               >
                 <div className="aspect-[4/5] relative overflow-hidden">
                   <img
@@ -129,6 +193,9 @@ export default function Portfolio() {
                     <p className="text-sm text-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       {item.description}
                     </p>
+                    <p className="text-xs text-gray-300 mt-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Click to view gallery
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -136,6 +203,19 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Lightbox */}
+      {selectedPortfolio && (
+        <Lightbox
+          images={selectedPortfolio.images}
+          isOpen={lightboxOpen}
+          onClose={() => {
+            setLightboxOpen(false);
+            setSelectedPortfolio(null);
+          }}
+          title={selectedPortfolio.title}
+        />
+      )}
 
       {/* Call to Action */}
       <section className="py-20 px-4 bg-white">

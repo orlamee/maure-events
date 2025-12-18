@@ -73,7 +73,7 @@ export default function Journal() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=1920&q=80"
+            src="/images/journal.png"
             alt="Journal"
             className="w-full h-full object-cover"
           />

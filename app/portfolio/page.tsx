@@ -44,8 +44,6 @@ export default function Portfolio() {
         '/images/Portfolio/Milestone Birthday/IMG_1325.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1363.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1365.JPG',
-        '/images/Portfolio/Milestone Birthday/IMG_1367.JPG',
-        '/images/Portfolio/Milestone Birthday/IMG_1368(1).JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1368.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1371.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1373.JPG',
@@ -57,7 +55,6 @@ export default function Portfolio() {
         '/images/Portfolio/Milestone Birthday/IMG_1433.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_1436.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_3575.JPG',
-        '/images/Portfolio/Milestone Birthday/IMG_3592.JPG',
         '/images/Portfolio/Milestone Birthday/IMG_3598.JPG',
       ]
     },
@@ -77,7 +74,6 @@ export default function Portfolio() {
         '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9612.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9613.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9615.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9626.JPG',
       ]
     },
@@ -98,7 +94,6 @@ export default function Portfolio() {
         '/images/Portfolio/Anniversary Celebration/IMG_4925.JPG',
         '/images/Portfolio/Anniversary Celebration/IMG_4927.JPG',
         '/images/Portfolio/Anniversary Celebration/IMG_4930.JPG',
-        '/images/Portfolio/Anniversary Celebration/IMG_4931.JPG',
         '/images/Portfolio/Anniversary Celebration/IMG_4935.JPG',
       ]
     },

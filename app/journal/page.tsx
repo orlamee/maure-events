@@ -255,19 +255,20 @@ export default function Journal() {
       {/* Blog Post Modal */}
       {selectedPost !== null && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 md:p-8"
           onClick={() => setSelectedPost(null)}
         >
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-white max-w-4xl max-h-[90vh] overflow-y-auto relative"
+            className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto relative shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setSelectedPost(null)}
-              className="sticky top-4 right-4 float-right z-10 bg-[#556B2F] text-white p-3 hover:bg-[#6B8E3D] transition-colors"
+              className="absolute top-4 right-4 z-20 bg-[#556B2F] text-white p-3 rounded-full hover:bg-[#6B8E3D] transition-colors shadow-lg"
+              aria-label="Close modal"
             >
               <FaTimes size={20} />
             </button>

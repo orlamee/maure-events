@@ -34,9 +34,10 @@ export default function Contact() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80"
+            src="/images/our-story/IMG_3016.JPG"
             alt="Contact Us"
             className="w-full h-full object-cover"
+            style={{ objectPosition: '50% 22%' }}
           />
           <div className="absolute inset-0 bg-black/50"></div>
         </div>

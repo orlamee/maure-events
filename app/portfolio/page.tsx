@@ -26,10 +26,6 @@ export default function Portfolio() {
         '/images/Portfolio/Elegant Garden Wedding/IMG_0883.JPG',
         '/images/Portfolio/Elegant Garden Wedding/IMG_0884.JPG',
         '/images/Portfolio/Elegant Garden Wedding/IMG_0888.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1357.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1359.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1360.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1361.JPG',
       ]
     },
     {
@@ -62,18 +58,13 @@ export default function Portfolio() {
       id: 3,
       title: 'Intimate Dinner Party',
       category: 'intimate',
-      image: '/images/Portfolio/Intimate Dinner Party/IMG_9562.JPG',
-      description: 'Refined table setting for an exclusive private gathering',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
+      description: 'Elegant 30th birthday celebration with refined table settings',
       gallery: [
-        '/images/Portfolio/Intimate Dinner Party/IMG_9562.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9556.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9574.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9577.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9584.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9590.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9612.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9613.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9615.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9626.JPG',
       ]
     },

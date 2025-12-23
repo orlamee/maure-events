@@ -32,7 +32,8 @@ export default function Hero() {
             key={currentImageIndex}
             src={heroImages[currentImageIndex]}
             alt="Elegant event setup"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center md:object-center"
+            style={{ objectPosition: '80% 22%' }}
             initial={{ opacity: 0, scale: 1.1 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}

@@ -123,7 +123,7 @@ export default function Home() {
                 description: 'Stunning visual concepts brought to life'
               },
               {
-                image: '/images/Homepage/SERVICES SECTION/Day-Of Coordination/IMG_3500.JPG',
+                image: '/images/Homepage/SERVICES SECTION/Day-Of Coordination/IMG_3546.JPG',
                 title: 'Day-Of Coordination',
                 description: 'Seamless execution on your special day'
               }

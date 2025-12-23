@@ -9,6 +9,25 @@ export default function Services() {
   const services = [
     {
       icon: <FaCalendarCheck size={50} />,
+      title: 'Wedding Planning',
+      description: 'Comprehensive wedding planning services to create the celebration of your dreams.',
+      features: [
+        'Wedding vision consultation and discovery',
+        'Budget planning and management',
+        'Venue selection and booking',
+        'Vendor sourcing and contract negotiation',
+        'Wedding design and styling',
+        'Timeline creation and coordination',
+        'Guest management and RSVPs',
+        'Ceremony and reception planning',
+        'Rehearsal coordination',
+        'Full day-of coordination',
+        'Setup and breakdown oversight',
+        'Post-wedding coordination'
+      ]
+    },
+    {
+      icon: <FaCalendarCheck size={50} />,
       title: 'Full Event Planning & Management',
       description: 'Complete support from vision development to event execution for a stress-free experience.',
       features: [
@@ -128,7 +147,7 @@ export default function Services() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/Homepage/SERVICES SECTION/Event Design/IMG_9608.JPG"
+            src="/images/Homepage/SERVICES SECTION/Full Event Planning/IMG_1370.JPG"
             alt="Our Services"
             className="w-full h-full object-cover"
           />

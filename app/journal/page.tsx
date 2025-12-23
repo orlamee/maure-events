@@ -1,9 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { FaClock, FaUser } from 'react-icons/fa';
+import { FaClock, FaUser, FaTimes } from 'react-icons/fa';
+import { useState } from 'react';
 
 export default function Journal() {
+  const [selectedPost, setSelectedPost] = useState<number | null>(null);
   const blogPosts = [
     {
       id: 1,
@@ -136,7 +138,10 @@ export default function Journal() {
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 {blogPosts[0].excerpt}
               </p>
-              <button className="px-6 py-3 bg-[#556B2F] text-white uppercase tracking-wider text-sm hover:bg-[#6B8E3D] transition-colors duration-300">
+              <button 
+                onClick={() => setSelectedPost(0)}
+                className="px-6 py-3 bg-[#556B2F] text-white uppercase tracking-wider text-sm hover:bg-[#6B8E3D] transition-colors duration-300"
+              >
                 Read More
               </button>
             </div>
@@ -201,7 +206,10 @@ export default function Journal() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-gray-500">{post.date}</span>
-                    <button className="text-sm text-[#556B2F] font-semibold uppercase tracking-wider hover:text-[#6B8E3D] transition-colors">
+                    <button 
+                      onClick={() => setSelectedPost(post.id - 1)}
+                      className="text-sm text-[#556B2F] font-semibold uppercase tracking-wider hover:text-[#6B8E3D] transition-colors"
+                    >
                       Read More
                     </button>
                   </div>
@@ -243,6 +251,79 @@ export default function Journal() {
           </motion.div>
         </div>
       </section>
+
+      {/* Blog Post Modal */}
+      {selectedPost !== null && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={() => setSelectedPost(null)}
+        >
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="bg-white max-w-4xl max-h-[90vh] overflow-y-auto relative"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setSelectedPost(null)}
+              className="sticky top-4 right-4 float-right z-10 bg-[#556B2F] text-white p-3 hover:bg-[#6B8E3D] transition-colors"
+            >
+              <FaTimes size={20} />
+            </button>
+            
+            <div className="relative h-96 overflow-hidden">
+              <img
+                src={blogPosts[selectedPost].image}
+                alt={blogPosts[selectedPost].title}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute top-6 left-6">
+                <span className="bg-[#556B2F] text-white px-4 py-2 text-sm uppercase tracking-wider">
+                  {blogPosts[selectedPost].category}
+                </span>
+              </div>
+            </div>
+            
+            <div className="p-8 md:p-12">
+              <h2 className="text-4xl font-serif text-[#2C2416] mb-6">
+                {blogPosts[selectedPost].title}
+              </h2>
+              
+              <div className="flex items-center space-x-6 text-sm text-gray-600 mb-8 pb-6 border-b">
+                <div className="flex items-center space-x-2">
+                  <FaUser />
+                  <span>{blogPosts[selectedPost].author}</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaClock />
+                  <span>{blogPosts[selectedPost].readTime}</span>
+                </div>
+                <span>{blogPosts[selectedPost].date}</span>
+              </div>
+              
+              <div className="prose prose-lg max-w-none">
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  {blogPosts[selectedPost].excerpt}
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  This article provides valuable insights and expert advice from our team at Maure Events. 
+                  We believe in sharing our knowledge to help you create the most memorable celebrations.
+                </p>
+                <p className="text-gray-700 leading-relaxed mb-6">
+                  Whether you&apos;re planning a wedding, corporate event, or intimate gathering, these tips 
+                  and strategies will help guide you through the planning process with confidence and clarity.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  For personalized guidance and professional event planning services, we invite you to 
+                  <a href="/contact" className="text-[#556B2F] hover:text-[#6B8E3D] font-semibold"> contact our team</a> to 
+                  discuss your upcoming celebration.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </div>
   );
 }

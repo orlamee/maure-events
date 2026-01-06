@@ -58,14 +58,16 @@ export default function Portfolio() {
       id: 3,
       title: 'Intimate Dinner Party',
       category: 'intimate',
-      image: '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
+      image: '/images/Portfolio/Intimate Dinner Party/IMG_9819.JPG',
       description: 'Elegant 30th birthday celebration with refined table settings',
       gallery: [
-        '/images/Portfolio/Intimate Dinner Party/IMG_9608.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9612.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9613.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9615.JPG',
-        '/images/Portfolio/Intimate Dinner Party/IMG_9626.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9746.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9791.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9806.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9819.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9831.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9847.JPG',
+        '/images/Portfolio/Intimate Dinner Party/IMG_9862.JPG',
       ]
     },
     {

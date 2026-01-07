@@ -19,13 +19,16 @@ export default function Portfolio() {
       id: 1,
       title: 'Elegant Garden Wedding',
       category: 'weddings',
-      image: '/images/Portfolio/Elegant Garden Wedding/IMG_0874.JPG',
+      image: '/images/Portfolio/Elegant Garden Wedding/IMG_1361.JPG',
       description: 'A romantic outdoor celebration with lush florals and natural elegance',
       gallery: [
-        '/images/Portfolio/Elegant Garden Wedding/IMG_0874.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_0883.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_0884.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_0888.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1361.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1360.JPG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1730.JPEG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1731.JPEG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1732.JPEG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1733.JPEG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1734.JPEG',
       ]
     },
     {

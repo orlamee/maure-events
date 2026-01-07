@@ -24,11 +24,11 @@ export default function Portfolio() {
       gallery: [
         '/images/Portfolio/Elegant Garden Wedding/IMG_1361.JPG',
         '/images/Portfolio/Elegant Garden Wedding/IMG_1360.JPG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1730.JPEG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1731.JPEG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1732.JPEG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1733.JPEG',
-        '/images/Portfolio/Elegant Garden Wedding/IMG_1734.JPEG',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1730.jpeg',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1731.jpeg',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1732.jpeg',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1733.jpeg',
+        '/images/Portfolio/Elegant Garden Wedding/IMG_1734.jpeg',
       ]
     },
     {

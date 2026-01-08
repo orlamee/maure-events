@@ -71,6 +71,9 @@ export default function Portfolio() {
         '/images/Portfolio/Intimate Dinner Party/IMG_9831.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9847.JPG',
         '/images/Portfolio/Intimate Dinner Party/IMG_9862.JPG',
+        '/images/Portfolio/Intimate Dinner Party/intimate01.JPG',
+        '/images/Portfolio/Intimate Dinner Party/intimate02.JPG',
+        '/images/Portfolio/Intimate Dinner Party/intimate03.JPG',
       ]
     },
     {

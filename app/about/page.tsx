@@ -24,7 +24,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-6xl font-serif mb-4"
           >
-            About Maure Events
+            Meet the Planner
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

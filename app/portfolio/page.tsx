@@ -78,10 +78,10 @@ export default function Portfolio() {
     },
     {
       id: 4,
-      title: 'Anniversary Celebration',
+      title: 'Business Launch',
       category: 'social',
       image: '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
-      description: 'Romantic celebration of enduring love',
+      description: 'Celebratory event marking a new business venture',
       gallery: [
         '/images/Portfolio/Anniversary Celebration/IMG_4874.JPG',
         '/images/Portfolio/Anniversary Celebration/IMG_4880.JPG',
@@ -122,7 +122,7 @@ export default function Portfolio() {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-6xl font-serif mb-4"
           >
-            Our Portfolio
+            Memorable Moments
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}

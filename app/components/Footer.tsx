@@ -30,7 +30,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/about" className="text-sm text-gray-300 hover:text-[#C4A57B] transition-colors">
-                  About
+                  Meet the Planner
                 </Link>
               </li>
               <li>
@@ -41,11 +41,6 @@ export default function Footer() {
               <li>
                 <Link href="/portfolio" className="text-sm text-gray-300 hover:text-[#C4A57B] transition-colors">
                   Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link href="/journal" className="text-sm text-gray-300 hover:text-[#C4A57B] transition-colors">
-                  Journal
                 </Link>
               </li>
               <li>
@@ -62,8 +57,8 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center space-x-3 text-sm text-gray-300">
                 <FaPhone className="text-[#C4A57B]" />
-                <a href="tel:2406367044" className="hover:text-[#C4A57B] transition-colors">
-                  (240) 636-7044
+                <a href="tel:6675300989" className="hover:text-[#C4A57B] transition-colors">
+                  (667) 530-0989
                 </a>
               </li>
               <li className="flex items-center space-x-3 text-sm text-gray-300">

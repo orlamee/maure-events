@@ -142,7 +142,7 @@ maure-events/
 - **Email**: info@maureevents.com
 - **Phone**: (240) 636-7044
 - **Instagram**: @maure_events
-- **Hours**: Monday - Saturday: 12pm - 7pm | Sunday: Closed
+- **Hours**: Tuesday - Saturday: 12pm - 7pm | Sunday: Closed
 
 ## 📝 Customization
 

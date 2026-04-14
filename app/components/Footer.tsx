@@ -81,7 +81,7 @@ export default function Footer() {
             </ul>
             <div className="mt-4">
               <h5 className="text-sm font-semibold mb-2 text-[#C4A57B]">Business Hours</h5>
-              <p className="text-xs text-gray-400">Monday - Saturday: 12pm - 7pm</p>
+              <p className="text-xs text-gray-400">Tuesday - Saturday: 12pm - 7pm</p>
               <p className="text-xs text-gray-400">Sunday: Closed</p>
             </div>
           </div>

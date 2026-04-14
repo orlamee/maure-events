@@ -147,7 +147,7 @@ export default function Services() {
       <section className="relative h-[60vh] flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/Homepage/SERVICES SECTION/Full Event Planning/IMG_1370.JPG"
+            src="/images/Portfolio/Anniversary Celebration/IMG_4874.JPG"
             alt="Our Services"
             className="w-full h-full object-cover"
           />
